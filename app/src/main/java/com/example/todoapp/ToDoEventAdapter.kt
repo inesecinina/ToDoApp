@@ -1,13 +1,19 @@
 package com.example.todoapp
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityCompat.startActivityForResult
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_todo.view.*
 
 
-class ToDoEventAdapter (private val events: MutableList<ToDoEvent>) :
+class ToDoEventAdapter (
+    private val events: MutableList<ToDoEvent>,
+    private val listener: AdapterClickListener
+) :
     RecyclerView.Adapter<ToDoEventAdapter.ToDoViewHolder>(){
 
     class ToDoViewHolder(view: View): RecyclerView.ViewHolder(view)
@@ -32,7 +38,7 @@ class ToDoEventAdapter (private val events: MutableList<ToDoEvent>) :
             notifyDataSetChanged()
         }
         holder.itemView.fix.setOnClickListener{
-
+            listener.eventFixClicked(position)
         }
 
     }
