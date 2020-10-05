@@ -37,6 +37,7 @@
         android:ems="10"
         android:hint="@string/when"
         android:inputType="text"
+        android:focusableInTouchMode="false"
         app:layout_constraintBottom_toTopOf="@+id/where_edit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
