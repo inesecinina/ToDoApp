@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:paddingRight="16dp"
+    android:layout_margin="16sp"
+    android:background="@color/colorLightViolet">
 
     <TextView
         android:layout_width="0dp"
@@ -16,6 +18,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:text="@string/when"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/when_text"
         app:layout_constraintEnd_toStartOf="@+id/when_text"
         app:layout_constraintStart_toStartOf="parent" />
@@ -28,6 +31,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:text="@string/where"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/where_text"
         app:layout_constraintEnd_toStartOf="@+id/where_text"
         app:layout_constraintStart_toStartOf="parent" />
@@ -39,6 +43,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:text="@string/what"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/what_text"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -48,7 +53,9 @@
         android:layout_height="@dimen/text_view_heigh"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:shadowRadius="4"
         android:text="@string/with_whom"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/with_whom_text"
         app:layout_constraintStart_toStartOf="parent" />
 

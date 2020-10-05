@@ -9,7 +9,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), AdapterClickListener {
     private val events = mutableListOf<ToDoEvent>(
-        ToDoEvent("24.02.2021", "Mājas", "Jāmazgā grīda", "ar slotu"))
+        //ToDoEvent("24.02.2021", "Mājas", "Jāmazgā grīda", "ar slotu")
+    )
     private lateinit var adapter: ToDoEventAdapter
 
 //    fun getAdapter() = adapter
