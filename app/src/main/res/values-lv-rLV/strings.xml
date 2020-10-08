@@ -1,7 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Darbu vācelīte</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
+    <string name="action_settings">Iestatījumi</string>
     <string name="Title">Pievienot vai labot uzdevumu</string>
     <string name="when">Kad?</string>
     <string name="where">Kur?</string>
@@ -9,5 +9,4 @@
     <string name="with_whom">Ar ko?</string>
     <string name="save">SAGLABĀT</string>
     <string name="back">ATCELT</string>
-    <string name="change_lang">Mainīt valodu</string>
 </resources>

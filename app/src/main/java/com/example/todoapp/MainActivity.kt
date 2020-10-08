@@ -4,13 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity(), AdapterClickListener {
-    private val events = mutableListOf<ToDoEvent>(
-        //ToDoEvent("24.02.2021", "Mājas", "Jāmazgā grīda", "ar slotu")
-    )
+    private val events = mutableListOf<ToDoEvent>()
     private lateinit var adapter: ToDoEventAdapter
 
 //    fun getAdapter() = adapter
@@ -45,9 +44,9 @@ class MainActivity : AppCompatActivity(), AdapterClickListener {
             val existingEventPosition = data.getIntExtra("pozicija", -1)
             val existingEvent = data.getSerializableExtra("dati") as ToDoEvent
 
-            Log.d("TAG-A", data.toString())
-            Log.d("TAG-A", existingEventPosition.toString())
-            Log.d("TAG-B", existingEvent.toString())
+//            Log.d("TAG-A", data.toString())
+//            Log.d("TAG-A", existingEventPosition.toString())
+//            Log.d("TAG-B", existingEvent.toString())
             events.set(existingEventPosition, existingEvent)
             adapter.notifyDataSetChanged()
         }
